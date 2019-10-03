@@ -31,12 +31,9 @@ Burning the bootloader
 Controlling the device with the IwitVolumeKnob library
 ------------------------------------------------------
 
-You need two libraries:
-- The EncoderStepCounter library which can be downloaded from here: https://github.com/M-Reimer/EncoderStepCounter
-- The IwitVolumeKnob which can be downloaded from this repository
-
-Install both libraries by downloading the latest release as ZIP file and then install it into the Arduino IDE via "Sketch" -> "Include Library" -> "Add .ZIP Library".
-
-For some examples, you'll also need the "HID-Project" library by NicoHood. This can be found directly in the Arduino library manager.
+You need the following libraries to run the examples. They all can be found in the Arduino library manager:
+- EncoderStepCounter by Manuel Reimer
+- IwitVolumeKnob by Manuel Reimer
+- HID-Project by NicoHood
 
 After installing the libraries, you can try out some example sketches in "File" -> "Examples" -> "IwitVolumeKnob". The "VolumeKnob" example actually replicates a functionality similar to the original firmware.
