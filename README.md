@@ -6,6 +6,8 @@ Introduction
 
 The iWit volume knob is a device that can be ordered in many online shops. It is supposed to control your multimedia volume by sending multimedia key presses for "volume up", "volume down" and "mute".
 
+So far I know of two variants of this device that are built based on the exactly same circuit around the exactly same microcontroller. The square ones with the text "USB Volume Cotrol" (note the typo :P ) and the round ones with the text "AIMOS" on it.
+
 By default this device is not easily reprogrammable and has a microcontroller on board with the markings removed. The boards usually have an exposed ICSP header. Attaching a programmer to this header allows to read the device signature which exposes that the microcontroller is an ATmega32u2
 
     avrdude: Device signature = 0x1e958a (probably m32u2)
@@ -27,6 +29,12 @@ Burning the bootloader
 Controlling the device with the IwitVolumeKnob library
 ------------------------------------------------------
 
-Install the library, available here, by downloading the latest release as ZIP file and then install it into the Arduino IDE via "Sketch" -> "Include Library" -> "Add .ZIP Library".
+You need two libraries:
+- The EncoderStepCounter library which can be downloaded from here: https://github.com/M-Reimer/EncoderStepCounter
+- The IwitVolumeKnob which can be downloaded from this repository
 
-Now you find some example sketches in "File" -> "Examples" -> "IwitVolumeKnob". The "VolumeKnob" example actually replicates a functionality similar to the original firmware.
+Install both libraries by downloading the latest release as ZIP file and then install it into the Arduino IDE via "Sketch" -> "Include Library" -> "Add .ZIP Library".
+
+For some examples, you'll also need the "HID-Project" library by NicoHood. This can be found directly in the Arduino library manager.
+
+After installing the libraries, you can try out some example sketches in "File" -> "Examples" -> "IwitVolumeKnob". The "VolumeKnob" example actually replicates a functionality similar to the original firmware.
