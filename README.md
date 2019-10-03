@@ -8,6 +8,8 @@ The iWit volume knob is a device that can be ordered in many online shops. It is
 
 So far I know of two variants of this device that are built based on the exactly same circuit around the exactly same microcontroller. The square ones with the text "USB Volume Cotrol" (note the typo :P ) and the round ones with the text "AIMOS" on it.
 
+![](https://raw.githubusercontent.com/wiki/M-Reimer/IwitVolumeKnob/images/iwit.jpg)
+
 By default this device is not easily reprogrammable and has a microcontroller on board with the markings removed. The boards usually have an exposed ICSP header. Attaching a programmer to this header allows to read the device signature which exposes that the microcontroller is an ATmega32u2
 
     avrdude: Device signature = 0x1e958a (probably m32u2)
